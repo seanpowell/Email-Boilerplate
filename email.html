@@ -1,0 +1,100 @@
+<!-- ***************************************************
+********************************************************
+
+HOW TO USE: Use these code examples as a guideline for formatting your email properly.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, all header styles can (and for the most part should) be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
+
+********************************************************  
+**************************************************** -->
+
+<!-- 
+Using the xHTML doctype seems best when sending HTML email. 
+More info/Reference: 
+Campaign Monitor - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
+Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+    
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Your Message Subject or Title</title>
+	<style type="text/css">
+	
+	/***********
+	 The MailChimp Reset from Fabio at MC 
+	 More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
+	***********/  
+	
+	   /* Client-specific Styles */
+       #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
+       body{width:100% !important;} /* Force Hotmail to display emails at full width */
+       body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
+
+       /* Reset Styles */
+	   body{margin:0; padding:0;}
+	   img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;} /* When brought inline, this line of css fixes Gmail/Hotmail image whitespace issue*/
+     
+    /** End Mail Chimp Reset **/ 
+    
+	   
+	   /** Hotmail header color reset:  Replace #000 (black) with your color. The !important is really what is overriding Hotmail's styling.  This is just a way to reset Hotmail to black.  If you have a specific color in mind for your headers than you still need to produce inline styles in that color for Gmail.  In fact, this will work the same inline with the !important declaration.  This way makes it clean and super easy for a tool to move the style inline.  If you need an inline styling tool, check out: http://premailer.dialect.ca/. 
+	   **/
+	   
+	   h1, h2, h3, h4 {
+	       color: #000 !important;
+	   }
+	   
+	   /** Yahoo link color reset (fix #1 of 2): This fix is from Brian Thies over at Campaign Monitor. Does not set color across email clients. still have to set link color inline for gmail.  More info: http://www.campaignmonitor.com/blog/post/3226/two-solutions-to-yahoo-mail-turning-all-your-links-blue/ **/
+	   
+	   a { color: #980; text-decoration: underline;} /** Yahoo Classic and other clients that support styling within the HEAD tags **/
+       .yshortcuts { color: #980 !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
+       .yshortcuts a span { color: #980 !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+       
+       /** BONUS: Adaptation of Brian Thies link color fix to render the Yahoo Short Cuts invisible.  You need to make the text color the same of the actual font color of your email and then set text-underline to none.  You then need to use the Responsys/Smith Harmon link color fix if you want to style your links anything other than blue.**/
+       
+       .yshortcuts { color: #000 !important; text-decoration: underline !important;} /* Body text color for the New Yahoo */
+       .yshortcuts a span { color: #000 !important; text-decoration: underline !important; } /* Link text color for the New Yahoo */
+	   
+	   /** Yahoo paragraph tag fix: removes the proper spacing or the paragraph (p) tag.  To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling.  You do not need to move this inline.  NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic.  NOTE: 1em or 1.12 em http://www.w3.org/TR/CSS21/sample.html**/
+	   
+	   p {
+	       margin: 1em 0;
+	   } 
+	   
+	   /** Fix for image spacing in Gmail and Hotmail. Only use this for images that you don't want to line up next to each other.  More testing REQUIRED.**/
+	   
+	   img {
+	       display: block;
+	   }
+	   
+	</style>
+</head>
+<body>
+    <!-- Tables are the most common way to format your email consistently.  Use nested tables as a way to space effectively in your message. -->
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+            <td width="300"></td>
+            <td width="300"></td>
+            <td width="300"></td>
+        </tr>
+        </tbody>
+    </table>  
+    <!-- end example table-->
+        
+    <!-- Here is a list of character entities that you can code into your message to get that em-dash, ampersand, or right double quote to render correctly. -->    
+    
+    <a href="http://www.intuitive.com/coolweb/entities.html" title="Character Entities" target="_blank">Here is a listing of character entities for easy reference...</a>
+    
+    <!-- Fix number 2 of 2 for the Yahoo Link color reset: Simply override the styling color and decoration inline.  Do not use in combination with fix number 1 unless you want to style the yshortcuts class separately, which this code allows you to do. (I prefer this method.)-->
+    
+        <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:#980; text-decoration:none;"><span style="color:#980;">Here is another fix for Yahoo from Responsys/Smith Harmon</span></a>
+        
+        <!-- Image spacers are a common way to help render your HTML email message consistently.  I have included a 1px/1px image for your own use.  Remeber, most clients do not download images automatically so image spacers would add to the blank image displays of most email clients.  Don't forget to set the width and height of your images. -->
+        
+        <img src="spacer.gif" alt="Spacer" width="10" height="10" />Spacer image located here (using GIT CDN): https://....
+                
+</body>
+</html>

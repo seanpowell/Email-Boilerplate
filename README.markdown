@@ -1,4 +1,5 @@
-# HOW TO USE: Use these code examples as a guideline for formatting your HTML email.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, some header styles can be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
+# HOW TO USE: 
+Use these code examples as a guideline for formatting your HTML email.  You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).  Remember, some header styles can be converted inline using your email service provider's toolset; or you can use many of the ones found on the web. DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
 
 ## A few things to note:    
 

@@ -34,14 +34,14 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     ***********/  
     
         /* Client-specific Styles */
-        #outlook a { padding:0; } /* Force Outlook to provide a "view in browser" button. */
-        body { width:100% !important; } .ReadMsgBody { width:100%; } .ExternalClass { width:100%; } /* Force Hotmail to display emails at full width */
-        body { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
+        #outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" button. */
+        body { width: 100% !important; } .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; } /* Force Hotmail to display emails at full width */
+        body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
 
         /* Reset Styles */
-        body { margin:0; padding:0; }
-        img { height:auto; line-height:100%; outline:none; text-decoration:none; }
-        #backgroundTable { height:100% !important; margin:0; padding:0; width:100% !important; }
+        body { margin: 0; padding: 0; }
+        img { height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        #backgroundTable { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
 
     /** End Mail Chimp Reset **/ 
     
@@ -87,7 +87,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
        **/
        
        table td {
-           border-collapse:collapse;
+           border-collapse: collapse;
        }
 
        /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
@@ -122,11 +122,11 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     
     <!-- Yahoo Link color fix: Simply override the styling color and decoration inline. -->
     
-    <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Your link copy here</span></a>
+    <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color: red; text-decoration: none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color: red;">Your link copy here</span></a>
     
     <!-- Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add 'style="display: block;"' to remove that space below the image.  Make sure to set alignment (don't use float) on your images if you are placing them inline with text.-->
     
-    <img src="full path to image" alt="Your alt text" title="Your title text" width="x" height="x" style="display:block;" />
+    <img src="full path to image" alt="Your alt text" title="Your title text" width="x" height="x" style="display: block;" />
     
     </td>
     </tr>

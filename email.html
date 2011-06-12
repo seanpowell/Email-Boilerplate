@@ -21,73 +21,73 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Your Message Subject or Title</title>
-	<style type="text/css">
-	
-	/***********
-	 The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Your Message Subject or Title</title>
+    <style type="text/css">
+    
+    /***********
+     The MailChimp Reset from Fabio Carneiro, MailChimp User Experience Design
      More info and templates on Github: https://github.com/mailchimp/Email-Blueprints
      http://www.mailchimp.com &amp; http://www.fabio-carneiro.com
      
      INLINE: Yes.
-	***********/  
-	
-	    /* Client-specific Styles */
-        #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
-        body{width:100% !important;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-        body{-webkit-text-size-adjust:none; -ms-text-size-adjust:none;} /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
+    ***********/  
+    
+        /* Client-specific Styles */
+        #outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" button. */
+        body { width: 100% !important; } .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; } /* Force Hotmail to display emails at full width */
+        body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; } /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
 
         /* Reset Styles */
-        body{margin:0; padding:0;}
-        img{height:auto; line-height:100%; outline:none; text-decoration:none;}
-        #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+        body { margin: 0; padding: 0; }
+        img { height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        #backgroundTable { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
 
     /** End Mail Chimp Reset **/ 
     
-	/** Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: This example recommends 1em or 1.12 em. More info on setting web defaults: http://www.w3.org/TR/CSS21/sample.html or http://meiert.com/en/blog/20070922/user-agent-style-sheets/
-	   
-	   INLINE: Yes.
-   	   **/
-	   
-	   p {
-	       margin: 1em 0;
-	   }
-	      
-	   /** Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black for a non-linked header, blue for a linked header, red for an active header (limited support), and purple for a visited header (limited support).  Replace with your choice of color. The !important is really what is overriding Hotmail's styling. Hotmail also sets the H1 and H2 tags to the same size. 
-	   
-	   INLINE: Yes.
-	   **/
-	   
-	   h1, h2, h3, h4, h5, h6 {
-	       color: black !important;
-	       line-height: 100% !important;
-	   }
-	   
-	   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	       color: blue !important;
-	   }
-	   
-	   h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
-   	       color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
-   	   }
-	   
-	   h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-	       color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
-	   }
-	   
-	   /** Outlook 07, 10 Padding issue: These "newer" versions of Outlook add some padding around table cells potentially throwing off your perfectly pixeled table.  The issue can cause added space and also throw off borders completely.  Use this fix in your header or inline to safely fix your table woes.
-	   
-	   More info: http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells/ 
-	   http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07/
-	   
-	   H/T @edmelly 
-	   
-	   INLINE: No
-	   **/
-	   
+    /** Yahoo paragraph fix: removes the proper spacing or the paragraph (p) tag. To correct we set the top/bottom margin to 1em in the head of the document. Simple fix with little effect on other styling. You do not need to move this inline. NOTE: It is also common to use two breaks instead of the paragraph tag but I think this way is cleaner and more semantic. NOTE: This example recommends 1em or 1.12 em. More info on setting web defaults: http://www.w3.org/TR/CSS21/sample.html or http://meiert.com/en/blog/20070922/user-agent-style-sheets/
+       
+       INLINE: Yes.
+       **/
+       
+       p {
+           margin: 1em 0;
+       }
+          
+       /** Hotmail header color reset: Hotmail replaces your header color styles with a green color on H2, H3, H4, H5, and H6 tags. In this example, the color is reset to black for a non-linked header, blue for a linked header, red for an active header (limited support), and purple for a visited header (limited support).  Replace with your choice of color. The !important is really what is overriding Hotmail's styling. Hotmail also sets the H1 and H2 tags to the same size. 
+       
+       INLINE: Yes.
+       **/
+       
+       h1, h2, h3, h4, h5, h6 {
+           color: black !important;
+           line-height: 100% !important;
+       }
+       
+       h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+           color: blue !important;
+       }
+       
+       h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+           color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+       }
+       
+       h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+           color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+       }
+       
+       /** Outlook 07, 10 Padding issue: These "newer" versions of Outlook add some padding around table cells potentially throwing off your perfectly pixeled table.  The issue can cause added space and also throw off borders completely.  Use this fix in your header or inline to safely fix your table woes.
+       
+       More info: http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells/ 
+       http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07/
+       
+       H/T @edmelly 
+       
+       INLINE: No
+       **/
+       
        table td {
-           border-collapse:collapse;
+           border-collapse: collapse;
        }
 
        /** BONUS: Adaptation of Brian Thies (Campaign Monitor) link color fix to render the Yahoo Short Cuts invisible. Yahoo short cuts are links that Yahoo places over certain text in your email without your knowledge.  In order to use this fix you need to make the text color the same of the actual font color of your email and reset a few elements. IMPORTANT: You then need to use the Responsys/Smith Harmon link color fix if you want to style your links to the color you want them to be.  If you don't, this fix will change all links to black in Yahoo.  
@@ -97,8 +97,8 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
        INLINE: No.
        **/
        
-       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;} /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
-	   
+       .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important; } /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+       
        </style>
 </head>
 <body>
@@ -122,11 +122,11 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
     
     <!-- Yahoo Link color fix: Simply override the styling color and decoration inline. -->
     
-    <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color:red; text-decoration:none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color:red;">Your link copy here</span></a>
+    <a href="http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html" style="color: red; text-decoration: none;" target ="_blank" title="Feeling Blue Over Yahoo"><span style="color: red;">Your link copy here</span></a>
     
     <!-- Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers.  This can be especially painful when you putting images on top of each other or putting back together an image you spliced for formatting reasons.  Either way, you can add 'style="display: block;"' to remove that space below the image.  Make sure to set alignment (don't use float) on your images if you are placing them inline with text.-->
     
-    <img src="full path to image" alt="Your alt text" title="Your title text" width="x" height="x" style="display:block;" />
+    <img src="full path to image" alt="Your alt text" title="Your title text" width="x" height="x" style="display: block;" />
     
     </td>
     </tr>

@@ -102,7 +102,12 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
        
        </style>
 </head>
-<body>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if mso 9]> <body class="mso mso-9"> <![endif]-->
+<!--[if mso 10]> <body class="mso mso-10"> <![endif]-->
+<!--[if mso 11]> <body class="mso mso-11"> <![endif]-->
+<!--[if mso 12]> <body class="mso mso-12"> <![endif]-->
+<!--[if !mso]><!--> <body> <!--<![endif]-->
     <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
     
     <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">

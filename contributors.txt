@@ -1,0 +1,17 @@
+Author
+Sean Powell
+
+Contributors and/or those highly referenced
+Neil Bradley
+Brian Blakely
+Emil Christensen
+Steve De Jonghe https://github.com/seutje
+Ed Melly
+Ros Hodgekiss
+Fabio Carneiro
+
+With plenty of help from these cool peeps
+Campaign Monitor
+MailChimp
+Email on Acid (Another nice boilerplate at http://www.emailology.org/#1)
+Litmus

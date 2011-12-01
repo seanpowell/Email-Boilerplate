@@ -40,9 +40,9 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
 		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */ 
 		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
-		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}  
-		/* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
 		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		/* End reset */
 
 		/* Some sensible defaults for images  
 		1. "-ms-interpolation-mode: bicubic" works to help ie properly resize images in IE. (if you are resizing them using the width and height attributes)
@@ -131,7 +131,7 @@ Email on Acid - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_
 
 			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
 						text-decoration: default;
-						color: orange !important;
+						color: orange !important; /* or whatever your want */
 						pointer-events: auto;
 						cursor: default;
 					}

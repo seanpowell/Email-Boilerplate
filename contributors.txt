@@ -9,6 +9,7 @@ Steve De Jonghe https://github.com/seutje
 Ed Melly
 Ros Hodgekiss
 Fabio Carneiro
+patrickkettner
 
 With plenty of help from these cool peeps
 Campaign Monitor

@@ -10,6 +10,9 @@ It is important to note that sometimes the styles in the header area should not 
 1. Not all of the styles in the header area should be brought inline. Those instances will be marked accordingly in the comments.
 2. Remember to test accordingly with your own code and styling. Although this code will help you get through a number of HTML email issues, it is no substitute for proper testing.
 
+### Subscribe
+Receive updates on the boilerplate here: http://tinyletter.com/ebp
+
 ### License:
 MIT License
 [http://htmlemailboilerplate.com/license.html](http://htmlemailboilerplate.com/license.html)

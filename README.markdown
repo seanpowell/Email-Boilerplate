@@ -1,5 +1,10 @@
 # HOW TO USE: 
-Use these code examples as a guideline for formatting your HTML email to avoid some of the major styling pitfalls in HTML email design. You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s). There are two main areas in the template: 1. The header (head) area of the document. You will find global styles, where indicated, to move inline. 2. The body section contains more specific fixes and guidance to use where needed in your design.
+Use these code examples as a guideline for formatting your HTML email to avoid some of the major styling pitfalls in HTML email design. You may want to create your own template based on these snippets or just pick and choose the ones that fix your specific rendering issue(s).
+
+There are two main areas in the template: 
+
+1. The header (head) area of the document. You will find global styles, where indicated, to move inline. 
+2. The body section contains more specific fixes and guidance to use where needed in your design.
 
 DO NOT COPY OVER COMMENTS AND INSTRUCTIONS WITH THE CODE to your message or risk spam box banishment :).
 

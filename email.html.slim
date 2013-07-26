@@ -326,7 +326,15 @@ html xmlns="http://www.w3.org/1999/xhtml"
       scss:
         // Target Outlook 2007 and 2010
 
-  body
+  / Use dummy attribute with UTF8 char to make sure Rails will send
+  / mail as quoted-printable. This allows to avoid 998 line length limit
+  / as it will split long line into chunks of 74 chars-long strings.
+  /
+  / See:
+  /   - http://tools.ietf.org/html/rfc2822#section-2.1.1
+  /   - http://en.wikipedia.org/wiki/Quoted-printable
+  /   - https://github.com/slim-template/slim/issues/123
+  body data-force-encoding="✓"
 
     / Wrapper/Container Table: Use a wrapper table to control the width and
     / the background color consistently of your email. Use this approach
